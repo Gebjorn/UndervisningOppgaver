@@ -7,21 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div onclick="clicker(this, 'green')">Jeg er grønn</div>
-    <div onclick="clicker(this, 'yellow')">Eller gul?</div>
-    <div onclick="clicker(this, 'red')">Rød er det som gjelder</div>
-    <div onclick="clicker(this, 'blue')">La oss prøve blå</div>
-    <div onclick="clicker(this, 'orange')">Oransje kanskje?</div>
 
-    <div id="jimmy"></div>
+    <input onchange="riddler(this.value)" >
+    <div id="guess">Hvilke duer kan ikke fly?</div>
 
     <script>
-        function clicker(bertil, color){
-            bertil.innerHTML;
-            document.getElementById("jimmy").innerHTML = bertil.innerHTML;
-            document.getElementById("jimmy").style.color = color;
+
+    var vinduer
+
+    function riddler(input){
+        userinput = input;
+        vinduer += input;
+        if(userinput == "vinduer"){
+    
+            alert("korrekt!");
+    
         }
+        else{
+            alert("feil! driti ut!")
+        }
+    
+    }
     </script>
 
 </body>

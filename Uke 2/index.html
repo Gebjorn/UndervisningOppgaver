@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div onclick="clicker(this, 'green')">Jeg er grønn</div>
+    <div onclick="clicker(this, 'yellow')">Eller gul?</div>
+    <div onclick="clicker(this, 'red')">Rød er det som gjelder</div>
+    <div onclick="clicker(this, 'blue')">La oss prøve blå</div>
+    <div onclick="clicker(this, 'orange')">Oransje kanskje?</div>
+
+    <div id="jimmy"></div>
+
+    <script>
+        function clicker(bertil, color){
+            bertil.innerHTML;
+            document.getElementById("jimmy").innerHTML = bertil.innerHTML;
+            document.getElementById("jimmy").style.color = color;
+        }
+    </script>
+
+</body>
+</html>
